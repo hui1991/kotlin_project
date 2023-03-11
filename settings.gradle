@@ -4,6 +4,7 @@ pluginManagement {
         google()
         mavenCentral()
         maven { url 'https://mirrors.cloud.tencent.com/nexus/repository/maven-public/' }
+        maven { url "https://oss.jfrog.org/libs-snapshot" }
     }
 }
 dependencyResolutionManagement {
@@ -12,8 +13,12 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven { url 'https://mirrors.cloud.tencent.com/nexus/repository/maven-public/' }
+        maven { url "https://oss.jfrog.org/libs-snapshot" }
     }
 }
 rootProject.name = "kotlin_project"
 include ':app'
 include ':utils'
+include ':kotlin'
+include ':jetpack'
+include ':rxjava'
