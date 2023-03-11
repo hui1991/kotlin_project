@@ -1,6 +1,7 @@
 package com.example.utils;
 
 public class CompareUtils {
+
     /**
      * 比较版本号
      */
@@ -20,4 +21,5 @@ public class CompareUtils {
         }
         return 0;
     }
+
 }
