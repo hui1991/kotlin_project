@@ -1,11 +1,13 @@
 package com.example.kotlin
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.example.jetpack.JetpackActivity
 import com.example.kotlin.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
 
@@ -31,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                 .setAction("Action", null).show()
         }
 //        RxJavaTest.test()
-//        startActivity(Intent(this,CoroutinesActivity::class.java))
+        startActivity(Intent(this,JetpackActivity::class.java))
 
     }
 
